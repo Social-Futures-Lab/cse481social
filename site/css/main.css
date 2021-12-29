@@ -41,7 +41,7 @@ ul, ol, dl, figure,
  */
 img {
   max-width: 100%;
-  vertical-align: middle; 
+  vertical-align: middle;
   max-height: 100%;
   }
 
@@ -131,8 +131,8 @@ h1, h2, h3, h4 {
  */
 .site-header {
   min-height: 56px;
-  position: relative; 
-  
+  position: relative;
+
       margin: auto 0.5em;
     font-family: "Roboto Mono", sans-serif;
     font-size: 1em;
@@ -186,7 +186,7 @@ h1, h2, h3, h4 {
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  background-color: white; 
+  background-color: white;
   color: #9d9d9d;
   }
 
@@ -198,7 +198,7 @@ h1, h2, h3, h4 {
   color: orange; }
 
 .navbar-right {
-  background-color: #9d9d9d; 
+  background-color: #9d9d9d;
   }
 
 .navbar-inverse .navbar-right > li > a,
@@ -206,19 +206,19 @@ h1, h2, h3, h4 {
 .navbar-inverse .navbar-right > li > a:hover,
 .navbar-inverse .navbar-right > li > a:focus
  {
-	color: white; 
+	color: white;
  }
- 
+
  .navbar-toggle {
- 	background-color: #9d9d9d; 
+ 	background-color: #9d9d9d;
  }
- 
+
  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: orange;
 }
- 
- 
+
+
 
 /* Floating Navigation Box */
 
@@ -300,11 +300,10 @@ h1, h2, h3, h4 {
     background-color: orange;
     color: white;
     width: 100%;
-    
+
 }
 
 .section {
-    border-top: 1px solid #000000;
     padding-top: 3.5em;
     padding-bottom: 1.5em;
     page-break-inside: auto;
@@ -448,7 +447,7 @@ h1, h2, h3, h4 {
 .card-img {
     width: 25rem;
     height: 20rem;
-    display:table-cell; 
+    display:table-cell;
     vertical-align:middle;
     text-align: center;
 }
@@ -490,4 +489,3 @@ h1, h2, h3, h4 {
     border-color: #000000; /*set the color you want here*/
    text-decoration: none;
 }
-
