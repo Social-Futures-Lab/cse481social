@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Edit page title -->
-    <title>Projects - CSE 440</title>
+    <title>Project - CSE 481p</title>
  
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
     <!-- This script dynamically loads CSS and JS files from the course base directory -->
@@ -17,7 +17,7 @@
     <script>
       // Get the base path for the course web by extracting 'courses' + courseName + quarter
       var fullPathArray = window.location.pathname.split('/');
-      var basePathArray = fullPathArray.slice(0,5);
+      var basePathArray = fullPathArray.slice(0,4);
       var basePath = basePathArray.join('/');
 
       // CSS files to load
@@ -36,20 +36,6 @@
   
       // Include the script that will load the CSS & Javscript files
       document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
-      
-      function toggle_instructions() {
-		  var x = document.getElementById("instructions");
-		  var y = document.getElementById("card_instructions");
-		  if (x.style.display === "none") {
-		    x.style.display = "block";
-		    y.style.borderBottomLeftRadius = "0px";
-    		y.style.borderBottomRightRadius = "0px";
-		  } else {
-		    x.style.display = "none";
-		    y.style.borderBottomLeftRadius = "4px";
-    		y.style.borderBottomRightRadius = "4px";
-		  }
-		}
     </script>
 
   </head>
@@ -63,570 +49,287 @@
           
       <!-- Begin page content -->
     
-      <!-- Edit main page content -->
-      <h1>Project Theme</h1>
-      <p>In the last year, various crises at the local, national, and global levels have laid bare the many inequities that different groups in our society currently face. Thus, this offering&rsquo;s project theme will be &ldquo;<span style="font-weight: bold;">reducing disparities</span>&rdquo;, where this can be broadly construed to relate to helping groups of people gain access to information, resources, support, connections, communities, opportunities, etc. that other groups may more easily access for various reasons.&nbsp;</p>
-	
-	<div class="card">
-	  <ul class="list-group list-group-flush">
-	    <li class="list-group-item" id="card_instructions" style="background-color: #2A7AE2; color: #ffffff;" onclick="toggle_instructions()">Project instructions for teams</li>
-	    <li class="list-group-item" id="instructions" style="display: none;">
-	    	
-	    	
-	<p>Your team's goal is to choose and then design for a group of people that currently face a disparity in access of some kind. <span style="font-weight: bold;">Your team must pick a user group that you all do not consider yourself a member of</span>; this is so that you will not rely too much on your own experiences during user research. Over the course of the quarter, your team will work on designing a system to help this group of people gain the kind of access that other groups may already have.&nbsp;</p>
-	<p>You should identify and consider goals and activities that are important to people. The domain could involve disparities regarding healthcare, education, money, food, fitness, technology and digital services, government and local services, social activities, mental health, safety, clothing, shelter, jobs, mentorship, and the list goes on! Activities within these domains could include reducing barriers that people currently face, directly providing access to information or resources, connecting people to other people who have those resources, forming a community among people to help each other or engage in collective action, or highlighting the disparity to people who have the ability to change it.</p>
-	<p>Here are examples of prior projects from similar courses with target groups and ideas that would be relevant under this theme:</p>
-	<ul>
-	   <li>A service for connecting <span style="font-style: italic;">people without direct access to technology</span>, such as senior living communities and homeless populations (in your case, you would pick just one of these groups), with librarians to provide them with library resources: <a href="https://www.uwdesignshow.com/projects/seattle-public-library-app-outreach-system" target="_blank" rel="noopener">https://www.uwdesignshow.com/projects/seattle-public-library-app-outreach-system</a></li>
-	   <li>A system to support <span style="font-style: italic;">truck drivers who lack access to their families</span>, friends, and sense of home to stay better connected with loved ones: <a href="https://courses.cs.washington.edu/courses/cse440/19sp/projects/cabin/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/19sp/projects/cabin/</a></li>
-	   <li>A resource for <span style="font-style: italic;">students without access to sexual education courses</span> to be able to ask questions and access resources and learning materials regarding sex education: <a href="https://courses.cs.washington.edu/courses/cse440/19wi/assets/projects/seek/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/19wi/assets/projects/seek/</a></li>
-	   <li>A tool for <span style="font-style: italic;">gig-economy drivers that have difficulty accessing amenities</span> while working to be able to connect with local businesses to use their facilities: <a href="https://web.stanford.edu/class/cs147/projects/OnlineLocalCommunity/coral/" target="_blank" rel="noopener">https://web.stanford.edu/class/cs147/projects/OnlineLocalCommunity/coral/</a></li>
-	   <li>A system for <span style="font-style: italic;">domestic abuse victims who lack power and information due to their abuser</span> to be able to learn about and fight back against device spying: <a href="https://courses.cs.washington.edu/courses/cse440/20wi/projects/guardia/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/20wi/projects/guardia/</a></li>
-	   <li>A system for <span style="font-style: italic;">hospital patients with mobility impairments</span> to be able to independently move around in the hospital via the use of an autonomous wheelchair: <a href="https://www.youtube.com/watch?v=bL0-mn9tKhQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=bL0-mn9tKhQ</a></li>
-	   <li>An app for <span style="font-style: italic;">Korean immigrants who do not speak English proficiently</span> access contextually-relevant common English phrases and information for conversing in the U.S.: <a href="https://courses.cs.washington.edu/courses/cse440/17sp/projects/Iyagi_Seattle/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/17sp/projects/Iyagi_Seattle/</a></li>
-	</ul>
-	<p>As part of your project, you will need to define what a specific group's needs are that your project can help support, and what activity you would like to design to help address this need. While your design may not be able to address this head on, it may be useful to consider the conditions that allowed this disparity in question to arise while conducting user research and learning from your target group. Think about how the activity you chose is currently supported via technology (or not), what doesn&rsquo;t work about current ways of supporting it, and how your solution will do this better. Finally,<span style="font-weight: bold;"> be specific in the group you select!</span> The specificity of addressing a particular group of people allows you to deeply think about what makes the group unique and how you would best want to support them. So, dive in and see what you can come up with!</p>
-	
-	    	
-	    </li>
-	  </ul>
-	</div>
-	
-    <h1>Projects</h1>
-    
-    <div class="row">
-	    <div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group1logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Getting Ahead(Set)</h3>
-			    <p class="card-text">
-			    	Helping Chinese Immigrants Get Ahead(set) In the Hospital
-			    	<BR><BR>
-			    	Team: Eric Chan, Lindo Do, Mayki Hu, George Zhang</p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/helping-chinese-immigrants-get-ahead-set-in-the-hospital-c940359185f0">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/%E6%96%87-w%C3%A9n-to-meet-a-doctor-anytime-with-ahead-set-8f820d5a0eac">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-	
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group2logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">VirtualVisitor</h3>
-			    <p class="card-text">
-			    	A New and COVID Friendly Way to Meet Your Future Furry Friend<BR><BR>
-			    	Team: Patrick Render,
-		          Joonyoung Chong (Joon),
-		          Lizzie Gossman,
-		          Yanjie Niu</p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/virtual-visitor-a-new-and-covid-friendly-way-to-meet-your-future-furry-friend-9b1cea80634">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/virtual-visitor-a-new-and-covid-friendly-way-to-meet-your-future-furry-friend-2ad6c6871a5f">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group3logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">sExtension</h3>
-			    <p class="card-text">Working Towards A Safer Online Sex Community<BR><BR>
-			    	Team:
-			    	Juan Martinez,
-          Milla Zuniga,
-          Yuxiao Shi,
-          Autumn Liu</p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/sextension-working-towards-a-safer-online-sex-community-2dbf3258a57f">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/sextension-working-towards-a-safer-online-sex-community-a6b885e9555d">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group4logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">MARS AR Creator</h3>
-			    <p class="card-text">
-			    	Bring a Universe of Field Trips into Your Virtual Classroom<BR><BR>
-			    	Team: Mariam Mayanja,
-          Scott Swartz,
-          Angkana Rattanasouk,
-          Ryan Tannenberg</p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/a-universe-of-experiences-at-your-fingertips-531994810c96">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/bring-universe-of-field-trips-into-your-virtual-classroom-with-mars-augmented-reality-creator-e3d170d7410">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-	<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group5logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Allergo</h3>
-			    <p class="card-text">
-			    	A tool to help people with food allergies find enjoyable restaurants<BR><BR>
-			    	Team: Nathan Chia,
-          Victor Kuan,
-          Leo Tsai,
-          Sherry Yang
-          </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/be-free-from-your-food-allergies-2b46d8042d63">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/allergo-be-free-from-your-food-allergies-91beb7da45c5">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group6logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">HearAtHome</h3>
-			    <p class="card-text">
-			    	Affordable Sound Recognition at Home for Deaf and Hard of Hearing Parents<BR><BR>
-			    	Team: Mallory Johnson,
-          Maurice Montag,
-          Jacob van't Hoog,
-          Khoa Nguyen
-          </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/hearathome-affordable-sound-recognition-at-home-for-deaf-and-hard-of-hearing-parents-4c0ed31b2d33">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/hearathome-an-ear-to-hear-for-thosewho-cant-e2e809ee9c60">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group7logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">AiBuddy</h3>
-			    <p class="card-text">
-			    	Keep your students on track with AiBuddy<BR><BR>
-			    		Team:
-			    	Phillip Tran,
-          Nicoletta Gilbertson,
-          Ray Fung,
-          Alex McGregor
-          </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/aibuddy-helping-students-never-stop-learning-204238f17f12">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/keep-your-students-on-track-with-aibuddy-a9228fa47ba4">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group8logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">GrocerHub</h3>
-			    <p class="card-text">
-			    	Finding Home in the Grocery Store with GrocerHub<BR><BR>
-			    	Team: Daphne Hsu,
-          Shreya Jayaraman,
-          Ryan Liang,
-          Kris Wong
-          </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/finding-home-in-the-grocery-store-3071bca606ba">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/finding-home-in-the-grocery-store-with-grocerhub-35aa92464f7f">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group9logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Grocer-Ease</h3>
-			    <p class="card-text">
-			    	Learn, Find, and Connect: Making sure our communities have enough to eat<BR><BR>
-			    		Team:
-			    	Linda Vong,
-		          Abby Ellis,
-		          David Zarate,
-		          Danica Villez
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/learn-find-and-connect-making-sure-our-communities-have-enough-to-eat-with-grocer-ease-d4fdeebe08e9">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/learn-and-connect-making-sure-all-our-communities-have-enough-to-eat-with-grocer-ease-8d91c50bf7d5">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group10logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Localize</h3>
-			    <p class="card-text">
-			    	Rerouting Consumers to Small Businesses<BR><BR>
-			    	Team: Claudia Coulibaly,
-			          David Lee,
-			          Ethan Pyke,
-			          Larry Shan
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/localize-helping-small-businesses-recapture-the-market-167c4912bb0d">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/rerouting-consumers-to-small-businesses-cfedca17f671">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group11logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">ScoreMore</h3>
-			    <p class="card-text">
-			    	Empowering Low-Income Youth through Sports<BR><BR>
-			    		Team:
-			    	Shayan Nathan,
-		          Fadel Shitui,
-		          Libby Knell
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/puncturing-paywalls-alleviating-disparities-in-club-sport-involvement-for-low-income-youth-529ca2edfdd3">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/scoremore-empowering-low-income-youth-through-sports-4a872cdf0c98">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group12logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Invest Now</h3>
-			    <p class="card-text">
-			    	Learn how to earn a piece of the economic pie through investment<BR><BR>
-			    		Team: 
-			    	Joely Swartz,
-		          Amber Xu,
-		          Danh Luong
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/breaking-the-cycle-of-poverty-learn-how-to-earn-a-piece-of-the-economic-pie-through-investment-3a251bc8413f">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/breaking-the-cycle-of-poverty-58e4676312a0">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group13logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">EduBound</h3>
-			    <p class="card-text">
-			    	Improving the College Application and Transition Process for First-Gen Students<BR><BR>
-			    	Team: Elana Hummel,
-          		Ethan Sylvia,
-          		Hank Tadeusiak
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/edubound-improving-the-college-application-and-transition-process-for-first-generation-students-1dae9d428757">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/edubound-improving-the-college-application-and-transition-process-for-first-gen-students-c35e9b75f1a2">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group14logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Servicd</h3>
-			    <p class="card-text">
-			    	Serving Our Seniors<BR><BR>
-			    	Team: Morgan Graham,
-			          Wednesday Wolf,
-			          Marlena Rehder,
-			          Paari Gopal
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/helping-seniors-living-alone-5280a6afa51b">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/serving-our-seniors-b8b1c57a5e13">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-	<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group15logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">CareTalk</h3>
-			    <p class="card-text">
-			    	Nursing Mental Health: Care for Those Who Care<BR><BR>
-			    	Team: Alex Fu,
-          Anne Pham,
-          Chris Yuen,
-          Sophia Hwang
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/nursing-mental-health-care-for-those-who-care-83dd5cdac03f">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button>
-				  </a>
-				  <a href="https://cse440.medium.com/nursing-mental-health-care-for-those-who-care-f6492fd4db27">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button>
-				  </a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-			
-	<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group16logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Homie</h3>
-			    <p class="card-text">
-			    	It's a Better Way to Move to America<BR><BR>
-			    	Team: Akif Ahmed,
-          Isabelle Donsbach,
-          Truc Nguyen,
-          Ken Aragon
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/its-a-better-way-to-move-to-america-836cc70d79cb">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button></a>
-				  <a href="https://cse440.medium.com/its-a-better-way-to-move-to-america-5322b0768d6e">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button></a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-				
-	<div class="col-md-3 col-sm-4 col-xs-6">
-		    <div class="card_project">
-		    	<div class="card-img">
-			  		<img class="card-img-top" src="img/group17logo.png">
-			  	</div>
-			  <div class="card-body">
-			    <h3 class="card-title">Locallyours</h3>
-			    <p class="card-text">
-			    	Fueling local communities, one plate at a time<BR><BR>
-			    	Team: Jimmy Nguyen,
-          Richard Jiang,
-          Sabrina Pearson,
-          Yuji Lai
-         		 </p>
-			    
-			    <div class="btn-group" role="group">
-			    	<a href="https://cse440.medium.com/locallyours-bringing-small-plates-to-a-big-stage-56bc7ea16c94">
-				  <button type="button" class="btn btn-secondary btn-left">
-				  	User Research
-				  </button></a>
-				  <a href="https://cse440.medium.com/fueling-local-communities-one-plate-at-a-time-488e9b735877">
-				  <button type="button" class="btn btn-secondary btn-right">
-				  	Design
-				  </button></a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-	</div>
-    
-    
-    
-      <!-- End page content -->
+      <!-- Edit main page header -->  
 
+      <!-- Edit main page content -->
+      <div class="row">
+
+
+        <div class="col-md-2">
+          <nav class="navbar hidden-print hidden-sm hidden-xs sticky nav-sidebar" id="side-nav">
+              <ul>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G1">
+                  G1: User Research Report
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G2">
+                  G2: Pitch Presentation
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G3">
+                  G3: Low Fidelity Prototype 
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G4">
+                  G4: Code and Design Specification
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G5">
+                  G5: Midterm Presentation
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G6">
+                  G6: User Testing
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G7">
+                  G7: Digital Prototype
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G8">
+                  G8: Video Demo
+                </a></li>
+                <li class="nav-item side-nav-0"><a class="nav-link" href="#G9">
+                  G9: Website
+                </a></li>
+              </ul>
+            </nav>
+        </div>
+
+        <div class="content col col-md-9 col-md-offset-3">
+          <h1>CSE 481p Winter 2021: Research Project</h1>
+          <p>The assignment prompt is subject to minor changes, so please check back when time gets closer!</p>
+          <div class="section" id="G1" data-href="index.html#G1" data-level="0" class="side-nav-header">
+            <h2>G1: User Research Report</h2>
+            <p><span>This is the user research phase of your project. Based on the project ideas that you&rsquo;ve discussed as a group, narrow down to a target topic area and target audience for your project. For instance, perhaps you wish to do something to combat vaccine misinformation on social media, and thus, you want to target people that inadvertently (as opposed to on purpose) share vaccine misinformation. Or, say you wish to focus on improving online dating during COVID, and you want to target college students on the UW campus. Notice that we&rsquo;re not talking about solutions yet.&nbsp;</span></p>
+            <p><span>Given your narrowed focus and audience, plan a series of research activities that will help you know more about your target user(s), their goals and needs, and the environment they are in. These activities can include semi-structured interviews, participant observation, fly on the wall observation, questionnaire, and more.</span></p>
+            <p><span>Use the AEIOU framework to help organize your data collection and data analysis. AEIOU means that you will attend to each of these elements during your observations and interviews:</span></p>
+            <ul>
+                <li><span>Activities are goal-directed sets of actions.</span></li>
+                <li><span>Environments include the entire arena in which activities take place.</span></li>
+                <li><span>Interactions are between a person and someone or something else, and are the building blocks of activities.</span></li>
+                <li><span>Objects are the building blocks of the environment, key elements sometimes put to complex or even unintended uses, possibly changing their function, meaning, and context.</span></li>
+                <li><span>Users are the people whose behaviors, preferences, and needs are being observed.</span></li>
+            </ul>
+            <p><span>Use the AEIOU framework to present your findings from the user research you have done. You can use text, quotes, photos, diagrams, etc. to convey your findings, while keeping your user study participants anonymous. Don&rsquo;t forget to explain what method you used to collect your data.</span></p>
+            <p><span>As a result of AEIOU, identify your takeaways from this research, including design challenges and opportunities that you might be able to build on for the rest of the quarter.</span></p>
+            <h3><span>Submission:</span></h3>
+            <p><span>Format your report as a 1-2 page blog post targeted towards a public general audience. Use a new Google Docs file within your Google Drive folder we&rsquo;ve created for this class. Start the blog post with an overview of your project direction and target audience before diving in to your user research method and why you chose that method. Summarize who your eventual participants/data were. Finally, describe your findings according to the AEIOU framework, along with your takeaways for your project. </span><strong>Submit the link to the Google Doc on Canvas. </strong><span>After we&rsquo;ve left comments on the document, you will transfer the contents to your project website as a new blog post.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 5 points towards your final grade.</span></p>
+            <ul>
+                <li><span>2 points: Quantity and appropriateness of participants, and appropriateness of the choice of method in relation to the participants.</span></li>
+                <li><span>3 points: Quality of the insights - this includes need identified, findings based on user research, and how it identifies design challenges and opportunities</span></li>
+            </ul>
+          </div>
+
+
+          <div class="section" id="G2" data-href="index.html#G2" data-level="0" class="side-nav-header">
+            <h2>G2: Pitch Presentation</h2>
+            <p><span>Now that your user research is completed, given that you know more about your target audience and topic, you should be able to come up with better and more specific ideas for projects than before. Revisit some of your project ideas in light of your newly acquired knowledge and brainstorm new project ideas. Perhaps at this point, you&rsquo;ve converged as a group on a fuzzy solution or you&rsquo;re still deciding between a few different solution directions, either is fine. However, you should be on your way now to converging on a problem space and developing a compelling story based on your user research as to the importance of your problem space.</span></p>
+            <p><span>In light of this project milestone, your assignment is to prepare a 3-5 minute pitch presentation to your classmates. This presentation should introduce your problem space and convince your audience of why this problem space is important, and/or why it is timely to address today. The presentation should also give the audience a deeper understanding of the problem and the people who experience this problem that you are targeting. You can talk through information from your user research as well as any additional information you&rsquo;ve uncovered on the internet. Finally, end with some directions for solutions you are considering. This is a good point to ask any specific feedback questions you may have from your classmates. In class, we will dedicate up to 5 minutes per group to audience questions and feedback.</span></p>
+            <p><span>To make your pitch more compelling, consider the following tips:</span></p>
+            <ul>
+                <li aria-level="1"><span>Describe information in the form of a hypothetical story, scenario, or day-in-the-life. You could even make it a skit!</span></li>
+                <li aria-level="1"><span>Share personal anecdotes from your user research participants, or direct quotes, screenshots, etc. (while keeping them anonymous)</span></li>
+                <li aria-level="1"><span>If it&rsquo;s relevant to them, ask your audience to think of how they experience this problem.</span></li>
+            </ul>
+            <h3><span>Submission:</span></h3>
+            <p><span>Create a slide deck for your presentation in Google Slides in your group&rsquo;s Google Drive folder. </span><strong>Submit the link to the Google Slides presentation on Canvas.</strong><span> You will give this pitch in class on Tues, Jan 25th. All group members should participate in giving the presentation.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 3 points towards your final grade.</span></p>
+            <ul>
+                <li><span>1 point: Quality and thought put into slide design and presentation</span></li>
+                <li><span>2 points: Content of the pitch, including clear definition of problem, compelling motivation, and interesting and deep contextualization of target audience and problem space.&nbsp;</span></li>
+            </ul>
+          </div>
+
+          <div class="section" id="G3" data-href="index.html#G3" data-level="0" class="side-nav-header">
+            <h2>G3: Low Fidelity Prototype </h2>
+            <p><span>Produce a low-fidelity prototype that is clear enough to allow you to conduct a &ldquo;wizard of oz&rdquo; experiment with participants. It doesn&rsquo;t have to actually work, but you need to be able to make your participants sufficiently experience it as if it is working. Your goal is to test the experience of using/engaging with your proposed design.</span></p>
+            <p><span>You will test your low-fidelity prototype on Tuesday, Feb 1 in class, so you&rsquo;ll need to have the prototype ready by then.&nbsp;</span></p>
+            <p><span>After testing, write up a blog post on your low-fidelity prototype and wizard of oz session. It should include 3 parts:</span></p>
+            <p><strong>A- Description of your low-fidelity prototype</strong></p>
+            <ul>
+                <li><span>What are the components?</span></li>
+                <li><span>What are the parts that are &lsquo;wizardry&rsquo;? (what parts are you &lsquo;faking&rsquo; for now but that will later be implemented)</span></li>
+            </ul>
+            <p><strong>B- screenshots, drawings, or photos (or other) of the prototype:</strong></p>
+            <ul>
+                <li><span>Include visual representations of your prototype (or several) that shows how people can interact with it.</span></li>
+            </ul>
+            <p><strong>C- Findings from the wizard of oz testing</strong></p>
+            <ul>
+                <li><span>What were your goals with this wizard of oz session: what did you want to learn and measure?</span></li>
+                <li><span>What did you learn in the wizard of oz session?</span></li>
+                <li><span>Are the findings promising enough that you would like to go ahead with the project? (If yes, describe why, if no, describe what changes you are proposing to make.)</span></li>
+                <li><span>What elements will you keep in your next iteration of the design?</span></li>
+                <li><span>What elements do you need to revise? Why?</span></li>
+            </ul>
+            <h3><span>Submission:</span></h3>
+            <p><span>Format your report as a 1-2 page blog post targeted towards a public general audience. Use a new Google Docs file within your Google Drive folder we&rsquo;ve created for this class. </span><strong>Submit the link to the Google Doc on Canvas. </strong><span>After we&rsquo;ve left comments on the document, you will transfer the contents to your project website as a new blog post.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 10 points towards your final grade.</span></p>
+            <ul>
+                <li><span>3 points: Part A, which aspects were wizardry, which were not, why.</span></li>
+                <li><span>2 points: Part B, visuals that are useful and well captions</span></li>
+                <li><span>5 points: Part C, goals, appropriate methods used, evaluation of outcome</span></li>
+            </ul>
+          </div>
+
+          <div class="section" id="G4" data-href="index.html#G4" data-level="0" class="side-nav-header">
+            <h2>G4: Code and Design Specification</h2>
+            <p><span>The Design and Code Specification report should contain the following components:</span></p>
+            <p><span><strong>(1) Requirements document: </strong>Identify the requirements for the project. What will your high-fidelity prototype have to fulfill and be able to do? What user interactions will it have to support? For example:&nbsp;</span></p>
+            <ul>
+                <li><span>a haptic experience for users&nbsp;</span></li>
+                <li><span>a physical component (tangible objects, IoT, a kiosk that prints...)</span></li>
+                <li><span>a sensing component (movement/temperature/light sensor&hellip;)</span></li>
+                <li><span>multiple interfaces or systems communicating with each other (API access&hellip;)</span></li>
+                <li><span>an inference component (machine learning, data collection&hellip;)</span></li>
+                <li><span>people interacting in the same physical space and/or the same time (synchronous vs asynchronous coordination&hellip;)</span></li>
+            </ul>
+            <p><span>While your solution needs to have at least one fully implemented component, any physical parts and/or sensing components can be simulated as part of your design vision.&nbsp;</span></p>
+            <p><span><strong>(2) Storyboard:</strong> Use a storyboard to outline the complete experience of using your system, from the first interaction with the system, to initialization and completion of a social activity. Make sure it creates a cohesive experience and that each step is connected to a functionality need. Create 2 or 3 storyboard flows that show different ways of interacting with your interface (e.g. different groups of people; different task flows; different goals; etc.).&nbsp;</span></p>
+            <p><span><strong>(3) Architectural design:</strong> Identify the different subsystems and components of your project, how and when they will need to interact. You should include a figure (diagram) showing how the different systems and components are connected and how they interact and exchange data. Add a list of all the components required for each subsystem. Please also describe the figure in one paragraph.&nbsp;</span></p>
+            <p><span><strong>(4) Explain in one paragraph how your system description in (3) enables the requirements described in (1) and (2). </strong>If there are holes, iterate until (1)-(4) fit together as a whole story (do this before you submit this assignment!).&nbsp;</span></p>
+            <h3><span>Submission:</span></h3>
+            <p><span>Format your report as a 1-2 page blog post (not including images) targeted towards a public general audience. Use a new Google Docs file within your Google Drive folder we&rsquo;ve created for this class. </span><strong>Submit the link to the Google Doc on Canvas. </strong><span>After we&rsquo;ve left comments on the document, you will transfer the contents to your project website as a new blog post.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 10 points towards your final grade.</span></p>
+            <ul>
+                <li><span>3 points: Requirements doc</span></li>
+                <li><span>3 points: Storyboard</span></li>
+                <li><span>3 points: Architectural design</span></li>
+                <li><span>1 point: Paragraph on how requirements match system description</span></li>
+            </ul>
+          </div>
+
+          <div class="section" id="G5" data-href="index.html#G5" data-level="0" class="side-nav-header">
+            <h2>G5: Midterm Presentation</h2>
+            <p><span>At this point in your project, you have a concrete idea of what you plan to build. You will now give a 3-5 minute presentation of your project to the rest of the class. The goal for this midterm presentation of your project to your classmates is twofold: (1) iterate on improving and fleshing out your pitch of your project (you can now incorporate more of your solution!), building from what you did in G2 to tell a compelling story and looking forward to what you will create for G8&rsquo;s demo video and the final public showcase, and (2) giving an update to your classmates on your project thus far and where you intend to go, including a summary of your code and design specification, and getting class feedback on your proposed direction. This is a good point to ask any specific feedback questions you may have from your classmates. In class, we will dedicate up to 5 minutes per group to audience questions and feedback.</span></p>
+            <h3><span>Submission:</span></h3>
+            <p><span>Create a slide deck for your presentation in Google Slides in your group&rsquo;s Google Drive folder. </span><strong>Submit the link to the Google Slides presentation on Canvas.</strong><span> You will give this presentation in class on Tues, Feb 15th. All group members should participate in giving the presentation.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 3 points towards your final grade.</span></p>
+            <ul>
+                <li><span>1 point: Quality and thought put into slide design and presentation</span></li>
+                <li><span>2 points: Content of the pitch and summary of code and design plans</span></li>
+            </ul>
+          </div>
+
+          <div class="section" id="G6" data-href="index.html#G6" data-level="0" class="side-nav-header">
+            <h2>G6: User Testing</h2>
+            <p><span>To prepare for user testing, please build a medium-fidelity prototype of your concept. Following the agile software development approach, implement (code) at least 2 functionalities of your system to test. It is up to you to decide what functionalities you implement.</span></p>
+            <p><span>Be prepared to have others test your system in class (on Tues, Feb 22) and also arrange for people (can be your friends or family) to test it at other times.&nbsp;</span></p>
+            <p><span>What you will test:</span></p>
+            <ul>
+                <li><span>Your user testing should test the implementation of at least 2 coded functionalities of your prototype. This means that you should test if a user is able to accomplish the task you planned for them with these functionalities.</span></li>
+                <li><span>Please have at least 3 separate user testing sessions. You can choose to organize each user testing session the way you would like. If you are not sure, we suggest splitting each participant session into 2 parts:</span>
+                    <ul>
+                        <li><span>Observe them using your system. Ask them to follow a think-aloud protocol.</span></li>
+                        <li><span>Conduct a very brief semi-structured interview to ask about specific questions you might have. You should have the semi-structured interview scripted beforehand, following specific questions that help you to learn whether your prototype meets your goals and to learn more about the user experience of your prototype.&nbsp;</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <p><span>After your user testing sessions, write a blog post report answering the following prompts:</span></p>
+            <p><strong>A- Description of your medium-fidelity prototype</strong></p>
+            <ul>
+                <li><span>What are the 2 functionalities you implemented (coded)? Where in your GitHub repository can we find the code for it and what Github issues address those functionalities?</span></li>
+                <li><span>How did you prototype the other functionalities? (Did you omit them, or wizard-of-oz them?)</span></li>
+            </ul>
+            <p><strong>B- Screenshot/photo of the prototype:</strong></p>
+            <ul>
+                <li><span>Include a screenshot or a few screenshots of your prototype.</span></li>
+            </ul>
+            <p><strong>C- Findings from the user testing sessions</strong></p>
+            <ul>
+                <li><span>What did you learn in the user testing sessions?</span></li>
+                <li><span>Are the findings promising enough that you would like to go ahead with the current functionality of the prototype? (If yes, describe why, if no, describe what changes you are proposing to make.)</span></li>
+                <li><span>What are the next functionalities that you will implement in your prototype?</span></li>
+            </ul>
+            <h3><span>Submission:</span></h3>
+            <p><span>Format your report as a 1-2 page blog post (not including images) targeted towards a public general audience. Use a new Google Docs file within your Google Drive folder we&rsquo;ve created for this class. </span><strong>Submit the link to the Google Doc on Canvas. </strong><span>After we&rsquo;ve left comments on the document, you will transfer the contents to your project website as a new blog post.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 9 points towards your final grade.</span></p>
+            <ul>
+                <li><span>2 points: Part A: description</span></li>
+                <li><span>2 points: Part B: screenshots that are useful and well captions</span></li>
+                <li><span>5 points: Part C: findings from the session</span></li>
+            </ul>
+            
+          </div>
+
+          <div class="section" id="G7" data-href="index.html#G7" data-level="0" class="side-nav-header">
+            <h2>G7: Digital Prototype</h2>
+            <p><span>Your final blog post and high-fidelity prototype submission will contain 2 parts.</span></p>
+            <p><strong>A-Blog post report:</strong></p>
+            <p><span>This is the final summative blog post in your project&rsquo;s blog series. Remind the audience of your problem or need you saw as well as the population/audience you are targeting. Present a description of your final prototype, both from a design and a technical perspective. Discuss any technical issues that came up during your implementation phase and also discuss any pivots you took due to technical issues or findings from testing. Provide your audience with a link for where to access your prototype and encourage them to try it out! Also, provide a link to your Github repository. Please include high-quality screenshots of your prototype. The screenshots should communicate well what the prototype is about for people who have not seen it in action.</span></p>
+            <p><strong>B-Implementation of a high-fidelity working prototype&nbsp;</strong></p>
+            <p><span>In addition to your blog post, we will assess the level of finish (both in terms of design and implementation) of your high-fidelity prototype. Make sure that your design is usable in a way that a stakeholder could test it out. This also includes good documentation of your code and a read-me file in your repository that tells people how to install/use it.</span></p>
+            <h3><span>Submission:</span></h3>
+            <p><span>Format your report as a 1-2 page blog post (not including images) targeted towards a public general audience. Use a new Google Docs file within your Google Drive folder we&rsquo;ve created for this class. </span><strong>Submit the link to the Google Doc on Canvas. </strong><span>After we&rsquo;ve left comments on the document, you will transfer the contents to your project website as a new blog post.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 20 points towards your final grade.</span></p>
+            <ul>
+                <li><span>5 points: Final blog post</span></li>
+                <li><span>12 points: Quality, usability of the final prototype, completeness according to code and design spec</span></li>
+                <li><span>3 points: Quality of organization in Github repo, including documentation of code, quality of documentation in issues, commits, pull requests</span></li>
+            </ul>
+
+          </div>
+
+          <div class="section" id="G8" data-href="index.html#G8" data-level="0" class="side-nav-header">
+            <h2>G8: Video Demo</h2>
+            <p><span>Building on the two more formal presentations you&rsquo;ve given in class, you will now produce a video demo of your product of no more than 5 minutes. The video demo must include two components:</span></p>
+            <p><span><strong>(1) A compelling motivation of the problem and the solution. </strong>Remember our tips from earlier and &ldquo;show not tell&rdquo;. Think about what it is about short videos you&rsquo;ve watched, such as on social media or on TV, that make them compelling. This should be an evolution of what you&rsquo;ve already done for G2 and G5 (can even reuse some of the slides perhaps).</span></p>
+            <p><span><strong>(2) A live recorded demonstration of your digital prototype in action.</strong> Depending on your system, this can sometimes be better as a screenshare or a video recording. The demo should go through all the main tasks and scenarios your tool supports. You can use voiceover and text captions, labels, or arrows in the video to help explain what is going on.&nbsp;</span></p>
+            <p><span>Conclude with a final takeaway message for your audience.</span></p>
+            <h3><span>Submission:</span></h3>
+            <p><span>Upload your video to YouTube. </span><strong>Submit the link to the YouTube video on Canvas. </strong><span>After we&rsquo;ve provided comments, you will add the video to your project website as an embedded video.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 8 points towards your final grade.</span></p>
+            <ul>
+                <li><span>3 points: Compelling motivation of problem and solution</span></li>
+                <li><span>3 points: Video demonstration of prototype</span></li>
+                <li><span>2 points: Quality of presentation</span></li>
+            </ul>
+
+          </div>
+
+          <div class="section" id="G9" data-href="index.html#G9" data-level="0" class="side-nav-header">
+            <h2>G9: Website</h2>
+            <p><span>The last thing for this project is to put the finishing touches on your project website. If you&rsquo;ve been updating the website over the course of the quarter like we asked, you should have very little to do at this point. This website will serve as the splash page/landing page for your finished product, and something you can point to in your portfolio. Thus, you will want to carefully consider the design of the main page. Think about your favorite software apps and tools and go to their homepage (not logged in) for inspiration on how to design a landing page.</span></p>
+            <p><span>The website should include the following information:</span></p>
+            <ul>
+                <li aria-level="1"><span>Logo, name, tagline, etc.</span></li>
+                <li aria-level="1"><span>Information about you (photos, names, contact info, roles&hellip;)</span></li>
+                <li aria-level="1"><span>Video demo</span></li>
+                <li aria-level="1"><span>Blog posts</span></li>
+                <li aria-level="1"><span>Link to final digital prototype</span></li>
+                <li aria-level="1"><span>(potentially, depending on your vision for this landing page) screenshots or descriptions of your final prototype, images or tidbits from the design process, or anything else you want to bring out of your blog posts to spotlight on this page</span></li>
+            </ul>
+            <h3><span>Submission:</span></h3>
+            <p><span>Nothing to submit as we already have your website URL.</span></p>
+            <p><span>In addition, each individual in the group must submit </span><strong>a private contribution statement</strong><span> at the following Google Forms link: [</span><a href="https://forms.gle/6npshgAWisQJtAwY8"><span>link</span></a><span>]. The statement should include (1): your estimate of the percent of group work completed by you, and (2) a summary of the work you did. For example, your statement could be: &ldquo;40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, also selected the images to be included.&rdquo;</span></p>
+            <h3><span>Grading Criteria:</span></h3>
+            <p><span>This assignment is worth 4 points towards your final grade.</span></p>
+            <ul>
+                <li><span>2 points: Website content</span></li>
+                <li><span>2 points: Website presentation</span></li>
+            </ul>
+
+          </div>
+
+
+
+
+
+        </div>
+
+      </div>
+      <!-- End page content -->
     </div>
 
     <footer class="site-footer">
