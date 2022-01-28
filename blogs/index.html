@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 481p</title>
+ 
+     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&amp;family=Roboto+Mono:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,2);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+      
+  //     function toggle_instructions() {
+		//   var x = document.getElementById("instructions");
+		//   var y = document.getElementById("card_instructions");
+		//   if (x.style.display === "none") {
+		//     x.style.display = "block";
+		//     y.style.borderBottomLeftRadius = "0px";
+  //   		y.style.borderBottomRightRadius = "0px";
+		//   } else {
+		//     x.style.display = "none";
+		//     y.style.borderBottomLeftRadius = "4px";
+  //   		y.style.borderBottomRightRadius = "4px";
+		//   }
+		// }
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+     <!--  <h1>Project Theme</h1>
+      <p>In the last year, various crises at the local, national, and global levels have laid bare the many inequities that different groups in our society currently face. Thus, this offering&rsquo;s project theme will be &ldquo;<span style="font-weight: bold;">reducing disparities</span>&rdquo;, where this can be broadly construed to relate to helping groups of people gain access to information, resources, support, connections, communities, opportunities, etc. that other groups may more easily access for various reasons.&nbsp;</p>
+	
+	<div class="card">
+	  <ul class="list-group list-group-flush">
+	    <li class="list-group-item" id="card_instructions" style="background-color: #2A7AE2; color: #ffffff;" onclick="toggle_instructions()">Project instructions for teams</li>
+	    <li class="list-group-item" id="instructions" style="display: none;">
+	    	
+	    	
+	<p>Your team's goal is to choose and then design for a group of people that currently face a disparity in access of some kind. <span style="font-weight: bold;">Your team must pick a user group that you all do not consider yourself a member of</span>; this is so that you will not rely too much on your own experiences during user research. Over the course of the quarter, your team will work on designing a system to help this group of people gain the kind of access that other groups may already have.&nbsp;</p>
+	<p>You should identify and consider goals and activities that are important to people. The domain could involve disparities regarding healthcare, education, money, food, fitness, technology and digital services, government and local services, social activities, mental health, safety, clothing, shelter, jobs, mentorship, and the list goes on! Activities within these domains could include reducing barriers that people currently face, directly providing access to information or resources, connecting people to other people who have those resources, forming a community among people to help each other or engage in collective action, or highlighting the disparity to people who have the ability to change it.</p>
+	<p>Here are examples of prior projects from similar courses with target groups and ideas that would be relevant under this theme:</p>
+	<ul>
+	   <li>A service for connecting <span style="font-style: italic;">people without direct access to technology</span>, such as senior living communities and homeless populations (in your case, you would pick just one of these groups), with librarians to provide them with library resources: <a href="https://www.uwdesignshow.com/projects/seattle-public-library-app-outreach-system" target="_blank" rel="noopener">https://www.uwdesignshow.com/projects/seattle-public-library-app-outreach-system</a></li>
+	   <li>A system to support <span style="font-style: italic;">truck drivers who lack access to their families</span>, friends, and sense of home to stay better connected with loved ones: <a href="https://courses.cs.washington.edu/courses/cse440/19sp/projects/cabin/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/19sp/projects/cabin/</a></li>
+	   <li>A resource for <span style="font-style: italic;">students without access to sexual education courses</span> to be able to ask questions and access resources and learning materials regarding sex education: <a href="https://courses.cs.washington.edu/courses/cse440/19wi/assets/projects/seek/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/19wi/assets/projects/seek/</a></li>
+	   <li>A tool for <span style="font-style: italic;">gig-economy drivers that have difficulty accessing amenities</span> while working to be able to connect with local businesses to use their facilities: <a href="https://web.stanford.edu/class/cs147/projects/OnlineLocalCommunity/coral/" target="_blank" rel="noopener">https://web.stanford.edu/class/cs147/projects/OnlineLocalCommunity/coral/</a></li>
+	   <li>A system for <span style="font-style: italic;">domestic abuse victims who lack power and information due to their abuser</span> to be able to learn about and fight back against device spying: <a href="https://courses.cs.washington.edu/courses/cse440/20wi/projects/guardia/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/20wi/projects/guardia/</a></li>
+	   <li>A system for <span style="font-style: italic;">hospital patients with mobility impairments</span> to be able to independently move around in the hospital via the use of an autonomous wheelchair: <a href="https://www.youtube.com/watch?v=bL0-mn9tKhQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=bL0-mn9tKhQ</a></li>
+	   <li>An app for <span style="font-style: italic;">Korean immigrants who do not speak English proficiently</span> access contextually-relevant common English phrases and information for conversing in the U.S.: <a href="https://courses.cs.washington.edu/courses/cse440/17sp/projects/Iyagi_Seattle/" target="_blank" rel="noopener">https://courses.cs.washington.edu/courses/cse440/17sp/projects/Iyagi_Seattle/</a></li>
+	</ul>
+	<p>As part of your project, you will need to define what a specific group's needs are that your project can help support, and what activity you would like to design to help address this need. While your design may not be able to address this head on, it may be useful to consider the conditions that allowed this disparity in question to arise while conducting user research and learning from your target group. Think about how the activity you chose is currently supported via technology (or not), what doesn&rsquo;t work about current ways of supporting it, and how your solution will do this better. Finally,<span style="font-weight: bold;"> be specific in the group you select!</span> The specificity of addressing a particular group of people allows you to deeply think about what makes the group unique and how you would best want to support them. So, dive in and see what you can come up with!</p>
+	
+	    	
+	    </li>
+	  </ul>
+	</div> -->
+	
+    <h1>Projects</h1>
+    
+    <div class="row">
+	    <div class="col-md-3 col-sm-4 col-xs-6">
+		    <div class="card_project">
+		    	<!-- <div class="card-img">
+			  		<img class="card-img-top" src="img/group1logo.png">
+			  	</div> -->
+			  <div class="card-body">
+			    <h3 class="card-title">Left on Read</h3>
+			    <p class="card-text">
+			    	<!-- Helping Chinese Immigrants Get Ahead(set) In the Hospital
+			    	<BR><BR> -->
+			    	Team: Catherine Guevara, Chris Kang, Jerome Paliakkara, Roberto Ramirez-Diaz</p>
+			    
+			    <div class="btn-group" role="group">
+			    	<a href="https://uwsocialcomputing.github.io/Left-On-Read/" target="_blank">
+				  <button type="button" class="btn btn-secondary btn-left">
+				  	Blog
+				  </button>
+				  </a>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		</div>
+	
+		<div class="col-md-3 col-sm-4 col-xs-6">
+		    <div class="card_project">
+		    	<!-- <div class="card-img">
+			  		<img class="card-img-top" src="img/group2logo.png">
+			  	</div> -->
+			  <div class="card-body">
+			    <h3 class="card-title">LALA</h3>
+			    <p class="card-text">
+			    	Team: Elizabeth Gossman, Aerin Malana, Audrey Ma, Lynda Pham</p>
+			    
+			    <div class="btn-group" role="group">
+			    	<a href="https://uwsocialcomputing.github.io/LALA/">
+				  <button type="button" class="btn btn-secondary btn-left" target="_blank">
+				  	Blog
+				  </button>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		<div class="col-md-3 col-sm-4 col-xs-6">
+		    <div class="card_project">
+		    	<!-- <div class="card-img">
+			  		<img class="card-img-top" src="img/group3logo.png">
+			  	</div> -->
+			  <div class="card-body">
+			    <h3 class="card-title">Vitamin CS</h3>
+			    <p class="card-text">
+			    	Team:
+			    	Logan Wang, Shaurya Jain, Elijah Greisz, William Castro</p>
+			    
+			    <div class="btn-group" role="group">
+			    	<a href="https://uwsocialcomputing.github.io/Vitamin-CS/" target="_blank">
+				  <button type="button" class="btn btn-secondary btn-left">
+				  	Blog
+				  </button>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		<div class="col-md-3 col-sm-4 col-xs-6">
+		    <div class="card_project">
+		    	<!-- <div class="card-img">
+			  		<img class="card-img-top" src="img/group4logo.png">
+			  	</div> -->
+			  <div class="card-body">
+			    <h3 class="card-title">Wild Swaying Goats</h3>
+			    <p class="card-text">
+			    	Team: Grant Williams, Jyoti Lama, Max Haak, Reinard Fegamas</p>
+			    
+			    <div class="btn-group" role="group">
+			    	<a href="https://uwsocialcomputing.github.io/Wild-Swaying-Goats/" target="_blank">
+				  <button type="button" class="btn btn-secondary btn-left">
+				  	Blog
+				  </button>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+	<div class="col-md-3 col-sm-4 col-xs-6">
+		    <div class="card_project">
+		    	<!-- <div class="card-img">
+			  		<img class="card-img-top" src="img/group5logo.png">
+			  	</div> -->
+			  <div class="card-body">
+			    <h3 class="card-title">Connect4</h3>
+			    <p class="card-text">
+			    	Team: Felicia Yan, Renee Wang, Emily Chang, Simona Liao
+          </p>
+			    
+			    <div class="btn-group" role="group">
+			    	<a href="https://uwsocialcomputing.github.io/connect4/" target="_blank">
+				  <button type="button" class="btn btn-secondary btn-left">
+				  	Blog
+				  </button>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		<div class="col-md-3 col-sm-4 col-xs-6">
+		    <div class="card_project">
+		    	<!-- <div class="card-img">
+			  		<img class="card-img-top" src="img/group6logo.png">
+			  	</div> -->
+			  <div class="card-body">
+			    <h3 class="card-title">Double Trouble</h3>
+			    <p class="card-text">
+			    	Team: Eric Yoon, Emelia Hughes
+          </p>
+			    
+			    <div class="btn-group" role="group">
+			    	<a href="https://uwsocialcomputing.github.io/Double-Trouble/" target="_blank">
+				  <button type="button" class="btn btn-secondary btn-left">
+				  	Blog
+				  </button>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		
+		<div class="col-md-3 col-sm-4 col-xs-6">
+		    <div class="card_project">
+		    	<!-- <div class="card-img">
+			  		<img class="card-img-top" src="img/group7logo.png">
+			  	</div> -->
+			  <div class="card-body">
+			    <h3 class="card-title">Savanna</h3>
+			    <p class="card-text">
+			    		Team: Savanna Yee
+          </p>
+			    
+			    <div class="btn-group" role="group">
+			    	<a href="https://uwsocialcomputing.github.io/Savanna/" target="_blank">
+				  <button type="button" class="btn btn-secondary btn-left">
+				  	Blog
+				  </button>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		
+
+			
+	</div>
+    
+    
+    
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
